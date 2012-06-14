@@ -25,9 +25,8 @@ clippings = parser.parse(contents)
 # Open DevonThink Pro and relevant DB
 
 devPro = Appscript.app("DEVONthink Pro")
-whose = Appscript.its
 
-#close whatever database is open
+#close whichever database is open
 devPro.database.close
 devPro.open_database(path_to_devon_db)
 
